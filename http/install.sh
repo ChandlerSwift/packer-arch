@@ -28,7 +28,6 @@ mount "${device}2" /mnt
 # by speed before intalling the rest of the packages
 curl -fsS https://www.archlinux.org/mirrorlist/?country=US > /tmp/mirrorlist
 grep '^#Server' /tmp/mirrorlist | sort -R | head -n 50 | sed 's/^#//' > /etc/pacman.d/mirrorlist
-# sed -i '1iServer = http://192.168.26.134:7070/$repo/os/$arch' /etc/pacman.d/mirrorlist
 pacman -Sy --noconfirm
 pacman -S python3 reflector --noconfirm
 reflector --verbose --country US --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
