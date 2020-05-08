@@ -14,7 +14,7 @@ echo 'LANG=en_US.UTF-8' > /etc/locale.conf
 mkinitcpio -p linux
 
 useradd -m -U chandler
-passwd -d chandler
+echo -e 'password\npassword' | passwd chandler
 cat <<EOF > /etc/sudoers.d/chandler
 Defaults:chandler !requiretty
 chandler ALL=(ALL) NOPASSWD: ALL
