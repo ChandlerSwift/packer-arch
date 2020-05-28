@@ -14,6 +14,7 @@ sudo pacman -Sy \
 	man-db \
 	man-pages \
 	openssh \
+	pv \
 	python \
 	slurp \
 	sshfs \
