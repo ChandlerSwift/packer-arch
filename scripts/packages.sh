@@ -26,3 +26,13 @@ sudo pacman -Sy --noconfirm \
 	youtube-dl \
 	zsh \
 	zsh-completions
+
+# install yay (https://github.com/Jguer/yay)
+cd /tmp
+git clone https://aur.archlinux.org/yay
+cd yay
+makepkg --syncdeps --install --noconfirm
+
+yay -S visual-studio-code-bin --noconfirm
+# yay -S vscodium --noconfirm
+# yay -S visual-studio-code-insiders --noconfirm
