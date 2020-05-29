@@ -1,7 +1,7 @@
 #!
 
 # potentially also include alsa-utils, iwd, qt5-wayland
-sudo pacman -Sy \
+sudo pacman -Sy --noconfirm \
 	alacritty \
 	docker \
 	firefox \
