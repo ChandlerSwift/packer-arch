@@ -13,3 +13,7 @@ vim -c "VundleInstall" -c "qa"
 
 # Remove password
 sudo passwd -d chandler
+
+# Enable systemd time syncing
+sudo systemctl enable systemd-timesyncd.service
+sudo systemctl start systemd-timesyncd.service
