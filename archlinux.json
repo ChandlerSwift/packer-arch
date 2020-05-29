@@ -41,7 +41,6 @@
 			"type": "shell",
 			"scripts": [
 				"scripts/packages.sh",
-				"scripts/dotfiles.sh",
 				"scripts/misc.sh"
 			]
 		}
