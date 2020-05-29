@@ -16,6 +16,7 @@ sudo pacman -Sy --noconfirm \
 	openssh \
 	pv \
 	python \
+	python-pip \
 	slurp \
 	sshfs \
 	sway \
@@ -36,3 +37,6 @@ makepkg --syncdeps --install --noconfirm
 yay -S visual-studio-code-bin --noconfirm
 # yay -S vscodium --noconfirm
 # yay -S visual-studio-code-insiders --noconfirm
+
+pip install pipenv \
+	youtube-dl
