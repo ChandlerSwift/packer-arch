@@ -17,6 +17,7 @@ sudo pacman -Sy --noconfirm \
 	pv \
 	python \
 	python-pip \
+	rsync \
 	slurp \
 	sshfs \
 	sway \
