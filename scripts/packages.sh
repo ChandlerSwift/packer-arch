@@ -35,7 +35,7 @@ git clone https://aur.archlinux.org/yay
 cd yay
 makepkg --syncdeps --install --noconfirm
 
-yay -S visual-studio-code-bin --noconfirm
+yay -S visual-studio-code-bin slack-desktop --noconfirm
 # yay -S vscodium --noconfirm
 # yay -S visual-studio-code-insiders --noconfirm
 
