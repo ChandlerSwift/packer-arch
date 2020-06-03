@@ -1,6 +1,7 @@
-#!
+#!/bin/sh
 
-# potentially also include alsa-utils, iwd, qt5-wayland
+# potentially also include alsa-utils, iwd, qt5-wayland, pulseaudio, node
+# We already have `base base-devel linux dhcpcd grub openssh sudo` from base install
 sudo pacman -Sy --noconfirm \
 	alacritty \
 	docker \
@@ -13,7 +14,6 @@ sudo pacman -Sy --noconfirm \
 	jq \
 	man-db \
 	man-pages \
-	openssh \
 	pv \
 	python \
 	python-pip \
@@ -23,6 +23,7 @@ sudo pacman -Sy --noconfirm \
 	sway \
 	swayidle \
 	swaylock \
+	ttf-fira-code \
 	vim \
 	wofi \
 	youtube-dl \
@@ -35,7 +36,11 @@ git clone https://aur.archlinux.org/yay
 cd yay
 makepkg --syncdeps --install --noconfirm
 
-yay -S visual-studio-code-bin slack-desktop powershell-bin --noconfirm
+export PKGEXT=.pkg.tar # don't compress aur packages before installing
+yay -S --noconfirm \
+	powershell-bin \
+	slack-desktop \
+	visual-studio-code-bin
 # yay -S vscodium --noconfirm
 # yay -S visual-studio-code-insiders --noconfirm
 
