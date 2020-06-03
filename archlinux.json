@@ -18,7 +18,7 @@
 			"boot_command": [
 				"<enter><wait10><wait10><wait10>",
 				"curl -O 'http://{{ .HTTPIP }}:{{ .HTTPPort }}/install{,-chroot}.sh'<enter><wait>",
-				"bash install.sh < install-chroot.sh && systemctl reboot<enter>"
+				"MIRROR={{user `mirror`}} bash install.sh < install-chroot.sh && systemctl reboot<enter>"
 			],
 			"ssh_username": "chandler",
 			"ssh_password": "password",
@@ -51,6 +51,7 @@
 		"disk_size": "80000",
 		"headless": "false",
 		"memory": "4096",
+		"mirror": "172.16.18.208:8080",
 		"iso_url": "https://archive.archlinux.org/iso/2020.05.01/archlinux-2020.05.01-x86_64.iso",
 		"iso_checksum": "fe15ff1c688c078d035e275a4946075281f5324e",
 		"iso_checksum_type": "sha1",

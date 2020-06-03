@@ -26,11 +26,15 @@ mount "${device}2" /mnt
 
 # Get some US mirrors just to install reflector, which will rank the mirrors
 # by speed before intalling the rest of the packages
-curl -fsS https://www.archlinux.org/mirrorlist/?country=US > /tmp/mirrorlist
-grep '^#Server' /tmp/mirrorlist | sort -R | head -n 50 | sed 's/^#//' > /etc/pacman.d/mirrorlist
-pacman -Sy --noconfirm
-pacman -S python3 reflector --noconfirm
-reflector --verbose --country US --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+if [ -z "$MIRROR" ]; then
+	curl -fsS https://www.archlinux.org/mirrorlist/?country=US > /tmp/mirrorlist
+	grep '^#Server' /tmp/mirrorlist | sort -R | head -n 50 | sed 's/^#//' > /etc/pacman.d/mirrorlist
+	pacman -Sy --noconfirm
+	pacman -S python3 reflector --noconfirm
+	reflector --verbose --country US --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+else
+	echo "Server = http://$MIRROR/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
+fi
 
 # Install base packages, just enough for a basic system with ssh
 pacman -Sy --noconfirm
