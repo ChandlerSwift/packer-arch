@@ -38,6 +38,7 @@ makepkg --syncdeps --install --noconfirm
 
 export PKGEXT=.pkg.tar # don't compress aur packages before installing
 yay -S --noconfirm \
+	azure-cli \
 	powershell-bin \
 	slack-desktop \
 	visual-studio-code-bin
