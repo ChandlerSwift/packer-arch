@@ -5,7 +5,7 @@ set -x
 
 ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
 
-echo 'pearson-devbox' > /etc/hostname
+echo 'pearson-dev-vm' > /etc/hostname
 
 sed -i -e 's/^#\(en_US.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
