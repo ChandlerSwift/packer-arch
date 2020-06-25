@@ -26,6 +26,7 @@ sudo pacman -Sy --noconfirm \
 	ttf-fira-code \
 	vim \
 	wofi \
+	xorg-server-xwayland \
 	youtube-dl \
 	zsh \
 	zsh-completions
