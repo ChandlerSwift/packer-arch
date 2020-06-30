@@ -11,6 +11,7 @@ sudo pacman -Sy --noconfirm \
 	grim \
 	i3status \
 	imagemagick \
+	ipython \
 	jq \
 	man-db \
 	man-pages \
