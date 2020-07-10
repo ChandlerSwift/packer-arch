@@ -13,6 +13,7 @@ sudo pacman -Sy --noconfirm \
 	imagemagick \
 	ipython \
 	jq \
+	mako \
 	man-db \
 	man-pages \
 	pv \
