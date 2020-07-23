@@ -2,6 +2,7 @@
 
 # potentially also include alsa-utils, iwd, qt5-wayland, pulseaudio, node
 # We already have `base base-devel linux dhcpcd grub openssh sudo` from base install
+# For non-virtualized installs, also include grub, alsa-utils, pulseaudio
 sudo pacman -Sy --noconfirm \
 	alacritty \
 	docker \
@@ -47,6 +48,7 @@ yay -S --noconfirm \
 	visual-studio-code-bin
 # yay -S vscodium --noconfirm
 # yay -S visual-studio-code-insiders --noconfirm
+# For non-virtualized installs, also include spotify, teams
 
 pip install pipenv \
 	youtube-dl
