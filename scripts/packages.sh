@@ -31,6 +31,7 @@ sudo pacman -Sy --noconfirm \
 	wofi \
 	xorg-server-xwayland \
 	youtube-dl \
+	yq \
 	zsh \
 	zsh-completions
 
