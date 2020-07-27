@@ -25,3 +25,6 @@ sudo systemctl start systemd-timesyncd.service
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
 sudo usermod -aG docker chandler
+
+[ -d /tmp/content/.ssh ] && mv /tmp/content/.ssh /home/chandler/
+[ -d /tmp/content/.gnupg ] && mv /tmp/content/.gnupg /home/chandler/
