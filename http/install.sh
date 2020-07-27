@@ -29,15 +29,13 @@ mount "${device}2" /mnt
 if [ -z "$MIRROR" ]; then
 	curl -fsS https://www.archlinux.org/mirrorlist/?country=US > /tmp/mirrorlist
 	grep '^#Server' /tmp/mirrorlist | sort -R | head -n 50 | sed 's/^#//' > /etc/pacman.d/mirrorlist
-	pacman -Sy --noconfirm
-	pacman -S python3 reflector --noconfirm
+	pacman -Sy python3 reflector --noconfirm
 	reflector --verbose --country US --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 else
 	echo "Server = http://$MIRROR/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
 fi
 
 # Install base packages, just enough for a basic system with ssh
-pacman -Sy --noconfirm
 pacstrap /mnt base base-devel linux dhcpcd grub openssh sudo
 swapon "${device}1"
 genfstab -p /mnt >> /mnt/etc/fstab
