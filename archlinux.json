@@ -39,14 +39,21 @@
 			"destination": "/tmp"
 		},
 		{
+			"type": "file",
+			"source": "sync",
+			"destination": "/tmp"
+		},
+		{
 			"type": "shell",
 			"scripts": [
 				"scripts/packages.sh",
 				"scripts/misc.sh"
-			]
+			],
+			"environment_vars": "COPY_HOMEDIR={{user `copy_homedir`}}"
 		}
 	],
 	"variables": {
+		"copy_homedir": "false",
 		"cpus": "4",
 		"disk_size": "80000",
 		"headless": "false",

@@ -1,12 +1,26 @@
 #!/bin/sh
 
-# Set up Dotfiles
-cd ~
-git init
-git remote add origin https://github.com/ChandlerSwift/dotfiles.git
-git fetch
-git checkout -f arch
-git submodule update --init --recursive  # Vundle
+if [ "$COPY_HOMEDIR" -eq "true" ]; then
+	echo "Copying home dir"
+	rsync -a --delete --info=progress2 /tmp/sync /home/chandler
+else # Setting up fresh
+	# Set up SSH auth from packer content dir
+	mkdir -p ~/.ssh
+	mv /tmp/content/.ssh/* ~/.ssh/
+
+	# TODO: copy other files from /tmp/content
+	# * gnupg
+	# * ...
+
+
+	# Set up Dotfiles
+	cd ~
+	git init
+	git remote add origin git@github.com:ChandlerSwift/dotfiles.git
+	git fetch
+	git checkout -f arch
+	git submodule update --init --recursive  # Vundle
+fi
 
 # Set zsh to default shell
 sudo chsh -s /usr/bin/zsh chandler
