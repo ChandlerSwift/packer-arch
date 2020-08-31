@@ -28,6 +28,7 @@ sudo pacman -Sy --noconfirm \
 	swaylock \
 	ttf-fira-code \
 	vim \
+	wl-clipboard \
 	wofi \
 	xorg-server-xwayland \
 	youtube-dl \
