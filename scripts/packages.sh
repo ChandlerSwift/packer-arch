@@ -5,6 +5,7 @@
 # For non-virtualized installs, also include grub, alsa-utils, pulseaudio
 sudo pacman -Sy --noconfirm \
 	alacritty \
+	dhcpcd \
 	docker \
 	firefox \
 	git \
