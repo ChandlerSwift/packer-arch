@@ -27,6 +27,7 @@ sudo pacman -Sy --noconfirm \
 	swayidle \
 	swaylock \
 	ttf-fira-code \
+	unzip \
 	vim \
 	wl-clipboard \
 	wofi \
