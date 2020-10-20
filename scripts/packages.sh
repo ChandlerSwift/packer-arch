@@ -8,6 +8,7 @@ sudo pacman -Sy --noconfirm \
 	dhcpcd \
 	docker \
 	firefox \
+	freerdp \
 	git \
 	go \
 	grim \
@@ -21,6 +22,7 @@ sudo pacman -Sy --noconfirm \
 	pv \
 	python \
 	python-pip \
+	remmina \
 	rsync \
 	slurp \
 	sshfs \
