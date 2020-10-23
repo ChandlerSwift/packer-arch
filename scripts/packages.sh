@@ -16,6 +16,7 @@ sudo pacman -Sy --noconfirm \
 	imagemagick \
 	ipython \
 	jq \
+	kubectl \
 	mako \
 	man-db \
 	man-pages \
