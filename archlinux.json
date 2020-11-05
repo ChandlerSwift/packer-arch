@@ -27,8 +27,7 @@
 			"vmx_data": {
 				"memsize": "{{user `memory`}}",
 				"numvcpus": "{{user `cpus`}}",
-				"mks.enable3d": "true",
-				"virtualHW.version": 16
+				"virtualHW.version": 10
 			}
 		}
 	],
