@@ -20,6 +20,7 @@ sudo pacman -Sy --noconfirm \
 	mako \
 	man-db \
 	man-pages \
+	openconnect \
 	pv \
 	python \
 	python-pip \
