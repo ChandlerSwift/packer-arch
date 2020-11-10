@@ -38,11 +38,6 @@
 			"destination": "/tmp"
 		},
 		{
-			"type": "file",
-			"source": "sync",
-			"destination": "/tmp"
-		},
-		{
 			"type": "shell",
 			"scripts": [
 				"scripts/packages.sh",
