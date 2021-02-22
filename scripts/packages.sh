@@ -21,6 +21,7 @@ sudo pacman -Sy --noconfirm \
 	man-db \
 	man-pages \
 	openconnect \
+	parallel \
 	pv \
 	python \
 	python-pip \
