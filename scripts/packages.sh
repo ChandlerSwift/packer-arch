@@ -28,6 +28,7 @@ sudo pacman -Sy --noconfirm \
 	rsync \
 	slurp \
 	sshfs \
+	strace \
 	sway \
 	swayidle \
 	swaylock \
