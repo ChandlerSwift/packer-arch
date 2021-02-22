@@ -33,6 +33,7 @@ sudo pacman -Sy --noconfirm \
 	swayidle \
 	swaylock \
 	ttf-fira-code \
+	units \
 	unzip \
 	vim \
 	wl-clipboard \
