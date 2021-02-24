@@ -10,6 +10,7 @@ PACKAGES=(
 	firefox
 	freerdp # RDP support in Remmina
 	git
+	gnome-keyring # VS Code, among others, uses this for storing login info
 	go
 	grim
 	i3status
