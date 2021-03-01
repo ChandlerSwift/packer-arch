@@ -6,7 +6,6 @@
 			"guest_os_type": "other5xlinux-64",
 			"iso_url": "{{user `iso_url`}}",
 			"iso_checksum": "{{user `iso_checksum`}}",
-			"iso_checksum_type": "{{user `iso_checksum_type`}}",
 			"output_directory": "output/{{user `vm_name`}}",
 			"vm_name": "{{user `vm_name`}}",
 			"disk_size": "{{user `disk_size`}}",
@@ -55,7 +54,6 @@
 		"mirror": "172.16.18.208:8080",
 		"iso_url": "https://archive.archlinux.org/iso/2020.10.01/archlinux-2020.10.01-x86_64.iso",
 		"iso_checksum": "67c2603d194a004f7010f57c25faa5dcea04a05f",
-		"iso_checksum_type": "sha1",
 		"ssh_timeout": "30m",
 		"boot_wait": "10s",
 		"vm_name": "archlinux-{{isotime \"2006-01-02_15_04_05\"}}"
