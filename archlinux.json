@@ -52,8 +52,8 @@
 		"headless": "false",
 		"memory": "8192",
 		"mirror": "172.16.18.208:8080",
-		"iso_url": "https://archive.archlinux.org/iso/2020.10.01/archlinux-2020.10.01-x86_64.iso",
-		"iso_checksum": "67c2603d194a004f7010f57c25faa5dcea04a05f",
+		"iso_url": "https://archive.archlinux.org/iso/2021.02.01/archlinux-2021.02.01-x86_64.iso",
+		"iso_checksum": "file:https://archive.archlinux.org/iso/2021.02.01/sha1sums.txt",
 		"ssh_timeout": "30m",
 		"boot_wait": "10s",
 		"vm_name": "archlinux-{{isotime \"2006-01-02_15_04_05\"}}"
