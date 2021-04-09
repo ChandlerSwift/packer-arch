@@ -5,10 +5,11 @@
 # For non-virtualized installs, also include grub, alsa-utils, pulseaudio
 PACKAGES=(
 	alacritty
-	dhcpcd
+	aws-cli
 	docker
 	firefox
 	freerdp # RDP support in Remmina
+	fzf
 	git
 	gnome-keyring # VS Code, among others, uses this for storing login info
 	go
@@ -17,6 +18,7 @@ PACKAGES=(
 	imagemagick
 	ipython
 	jq
+	jre-openjdk
 	kubectl
 	mako # notifications, comparable to dunst
 	man-db
@@ -34,10 +36,12 @@ PACKAGES=(
 	sway
 	swayidle
 	swaylock
+	tmux
 	ttf-fira-code
 	units
 	unzip
 	vim
+	wget
 	wl-clipboard
 	wofi # dmenu replacement
 	xorg-server-xwayland
