@@ -6,6 +6,7 @@
 PACKAGES=(
 	alacritty
 	aws-cli
+	cloc
 	docker
 	firefox
 	freerdp # RDP support in Remmina
