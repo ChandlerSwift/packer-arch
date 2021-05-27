@@ -4,11 +4,11 @@
 # We already have `base base-devel linux dhcpcd grub openssh sudo` from base install
 # For non-virtualized installs, also include grub, alsa-utils, pulseaudio
 PACKAGES=(
-	alacritty
 	aws-cli
 	cloc
 	docker
 	firefox
+	foot
 	freerdp # RDP support in Remmina
 	fzf
 	git
